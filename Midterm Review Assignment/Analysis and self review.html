@@ -1,0 +1,27 @@
+//Matthew K. Mills
+//N220
+// 2/26/2019
+//Analysis and self-review
+//I can't for the life of me figure out why this doesnt work.
+/* I want to create a simple program that takes a user input(named userInput)
+and multiplies the userInput by 5 when a button is pressed. Then I would like for the result be returned to the DOM
+using a getElementById for the output as well as the input. */
+<html>
+<body>
+
+
+<p>Click the button to multiply your number by 5.</p>
+<input id="userNumber"/>
+<button onclick="multiply()">Try it</button>
+
+<p id="output"></p>
+
+<script>
+function multiply() {
+  var x = document.getElementById("userNumber").innerHTML *5;
+  document.getElementById("output").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

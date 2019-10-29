@@ -1,0 +1,26 @@
+let xPositions = [];
+let yPositions = [];
+
+function setup() {
+  createCanvas(600,300);
+  fill(255, 12, 129);
+}
+
+function draw() {
+  background(0);
+  
+  //get rid of the last position
+  if(xPositions.length > 10) {
+    xPositions.shift();
+  }
+if(yPositions.length > 10) {
+    yPositions.shift();
+  }
+  
+  xPositions.push(mouseX);
+yPositions.push(mouseY);
+  
+  for(var i = 0; i < xPositions.length; i++) {
+    circle(xPositions[i],yPositions[i], 10);
+  }
+}
