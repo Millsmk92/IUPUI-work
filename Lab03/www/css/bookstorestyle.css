@@ -1,0 +1,162 @@
+/* 
+    Document   : bookstorestyle.css
+    Created on : Aug 28, 2014, 7:51:29 PM
+    Author     : Louie Zhu
+    Description:
+*/
+body {
+    text-align: center;  /* for IE */
+    background-color: #DFDFE1; 
+}
+
+div#wrapper {
+    text-align:left; /* reset text alignment */
+    width:980px; /* or a percentage, or whatever */
+    margin:0 auto; /* for the rest */
+}
+
+#curdate {
+    float:right;
+    margin: 3px 10px;
+}
+
+#navbar {
+    background-color: #8EC1CC;
+    padding: 5px 10px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    clear: right;
+}
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+#navbar a:hover,
+#navbar a:active,
+#navbar a:focus
+{
+    color: white;
+}
+
+#banner {
+    background-color: #448C9A; 
+    padding: 5px;
+    width: 100%;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#banner img {
+    width: 200px;
+    border: none;
+}
+
+#maintitle {
+    color: white; 
+    font-size: 28pt;
+    font-weight: bold;
+}
+
+#subtitle {
+    color: #3C0;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+
+/* styles of the shopping card */
+#shoppingcart {
+    width: 90px;
+    height: 70px;
+    text-align: center;
+    background-color: #FF9A35;
+    padding-top: 10px;
+}
+
+#shoppingcart a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* styles for the main content body */
+#mainbody {
+    padding: 10px;
+    background-color: white;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#mainbody a {
+    text-decoration: none;
+    color: #393ECE;
+}
+
+#mainbody a:hover,
+#mainbody a:active,
+#mainbody a:focus
+{
+    text-decoration: underline;
+    color: #FF9A35;
+}
+
+#footer {
+    font-size: 80%;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    -moz-border-radius-bottomright: 15px;
+}
+
+
+/* styles of the book list table */
+table.booklist {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+table.booklist td,
+table.booklist th {
+    border: 0px solid #eee;
+    padding: 5px;
+}
+
+table.booklist th {
+    background-color: #e4f1fe;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+table.booklist tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* styles of the book details table */
+table.bookdetails {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.bookdetails td {
+    vertical-align: top;
+}
+
+table.bookdetails h4, table.bookdetails p {
+    margin: 0px 0px 10px 10px;
+}
